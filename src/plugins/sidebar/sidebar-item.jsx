@@ -32,9 +32,7 @@ export default class SidebarItem extends Component {
       <div className={showTag ? "sidebar-menu is-open" : "sidebar-menu"}>
         <div className="menu-item"
              onClick={() => layoutActions.show(isShownKey, !showTag)}>
-
              {tag}
-             
         </div>
 
         <div className="sub-menu">
