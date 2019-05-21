@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+.form__input {
+    font-size: 15px;
+    border: 2px solid #CCC;
+    padding: 15px 5px;
+    width: 80%;
+    background-color: #F9f9f9;
+    &:focus {
+        border-color: green;
+        outline: none;
+    }
+}
+
+.button {
+    border: 0.1em solid black;
+    font-size: 1.1em;
+    padding: 14px 20px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+
+#swagger_sidebar {
+    float: left;
+    padding-top: 20px;
+    background: #FFF;
+    overflow: auto;
+    height: 100vh;
+    width: 20%;
+    h1 {
+        padding: 15px 5px;
+        margin-bottom: 5px;
+    }
+    
+    // display: flex;
+    .sidebar__search-container {
+        padding: 30px;
+        border-bottom: 1px solid #CCC;
+
+        .sidebar__search {
+            .form__input {
+                width: 100%;
+            }
+        }
+    }
+
+
+    #resources_nav {
+        padding: 10px 0 10px 10px;
+        .menu {
+            cursor: pointer;
+
+            &.actived {
+                background: #F9f9f9;
+                .menu-item {
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+                
+            }
+
+            .sub-menu {
+                cursor: pointer;
+                margin-bottom: 5px;
+                div {
+                    margin-left: 15px;
+                    padding: 5px 0px 5px 15px;
+                    &.actived {
+                        text-decoration: underline;
+                        background: #FFF;
+                    }
+                }
+                
+            }
+
+        }
+
+
+    }
+}
+
+#resources_container {
+    width: 80%;
+    float: right;
+    padding: 45px;
+    height: 100vh;
+    border: 1px solid red;
+    background: #F9f9f9;
+
+    .api-key {
+        .form__input {
+            font-weight: bold;
+        }
+        
+        .button {
+            margin-left: 5px;
+            margin-top: 1px;
+        }
+    }
+
+
+}

@@ -52,6 +52,12 @@ module.exports = require("./make-webpack-config")(rules, {
       "./src/style/main.scss",
       "./src/polyfills",
       "./src/standalone/index.js",
+    ],
+    "swagger-ui-xtrategie-preset": [
+      "./src/style/main.scss",
+      "./src/xtrategie/layout.scss",
+      "./src/polyfills",
+      "./src/xtrategie/index.js",
     ]
   },
   output: {
