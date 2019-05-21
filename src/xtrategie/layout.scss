@@ -22,6 +22,7 @@
     font-weight: bold;
     margin-left: 5px;
     margin-top: 1px;
+    cursor: pointer;
 }
 
 #swagger_sidebar {
@@ -31,6 +32,7 @@
     overflow: auto;
     height: 100vh;
     width: 20%;
+    position: fixed;
     h1 {
         padding: 15px 5px;
         margin-bottom: 5px;
@@ -51,25 +53,29 @@
 
     #resources_nav {
         padding: 10px 0 10px 10px;
-        .menu {
+        .sidebar-menu {
             cursor: pointer;
 
-            &.actived {
+            &.is-open {
                 background: #F9f9f9;
                 .menu-item {
                     text-decoration: underline;
                     font-weight: bold;
                 }
+                .sub-menu {
+                    display: block;
+                }
                 
             }
 
             .sub-menu {
+                display: none;
                 cursor: pointer;
                 margin-bottom: 5px;
-                div {
+                .opblock {
                     margin-left: 15px;
                     padding: 5px 0px 5px 15px;
-                    &.actived {
+                    &.is-open {
                         text-decoration: underline;
                         background: #FFF;
                     }
@@ -88,17 +94,17 @@
     float: right;
     padding: 45px;
     height: 100vh;
-    border: 1px solid red;
     background: #F9f9f9;
 
     .api-key {
         .form__input {
             font-weight: bold;
+            float: left;
         }
         
         .button {
             margin-left: 5px;
-            margin-top: 1px;
+            margin-top: 0px;
         }
     }
 

@@ -7,7 +7,9 @@ export default class Apikey extends Component {
           <input type="text"  
                 className="form__input"
                  />
-          <button className="button">Save Token</button>
+          <button 
+            type="submit"
+            className="button">Save Token</button>
       </div>
         
     )

@@ -15,6 +15,8 @@ export default class XtrategieLayout extends React.Component {
 
     const Sidebar = getComponent("Sidebar", true)
     const Apikey = getComponent("Apikey", true)
+    // const Operations = getComponent("operations", true)
+    const BaseLayout = getComponent("BaseLayout", true)    
 
     return (
       <div>
@@ -25,6 +27,8 @@ export default class XtrategieLayout extends React.Component {
         <div id="resources_container">
           <h1>Api Reference</h1>
           <Apikey />
+
+          <BaseLayout />
         </div>
       </div>
     )
